@@ -1,0 +1,12 @@
+{
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/tests/**"
+    ],
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.h": "cpp"
+    }
+}

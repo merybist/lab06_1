@@ -1,0 +1,93 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "1. Run Iterative Program (Lab_06_1_it)",
+            "type": "shell",
+            "command": "clang++ -std=c++17 -Wall Lab_06_1_it.cpp -o Lab_06_1_it && ./Lab_06_1_it",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "2. Run Recursive Program (Lab_06_1_rec)",
+            "type": "shell",
+            "command": "clang++ -std=c++17 -Wall Lab_06_1_rec.cpp -o Lab_06_1_rec && ./Lab_06_1_rec",
+            "group": "test",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "3. Run Unit Tests - Iterative (doctest)",
+            "type": "shell",
+            "command": "clang++ -std=c++17 -I./tests tests/UnitTest_06_1_it.cpp -o UnitTest_06_1_it && ./UnitTest_06_1_it",
+            "group": "test",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "4. Run Unit Tests - Recursive (doctest)",
+            "type": "shell",
+            "command": "clang++ -std=c++17 -I./tests tests/UnitTest_06_1_rec.cpp -o UnitTest_06_1_rec && ./UnitTest_06_1_rec",
+            "group": "test",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "5. Run ALL Unit Tests",
+            "type": "shell",
+            "command": "echo '=== Iterative Unit Tests ===' && clang++ -std=c++17 -I./tests tests/UnitTest_06_1_it.cpp -o UnitTest_06_1_it && ./UnitTest_06_1_it && echo '' && echo '=== Recursive Unit Tests ===' && clang++ -std=c++17 -I./tests tests/UnitTest_06_1_rec.cpp -o UnitTest_06_1_rec && ./UnitTest_06_1_rec",
+            "group": "test",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        }
+    ]
+}

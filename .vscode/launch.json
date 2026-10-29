@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Lab_06_1_it",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/Lab_06_1_it",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "1. Run Iterative Program (Lab_06_1_it)"
+        },
+        {
+            "name": "Debug Lab_06_1_rec",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/Lab_06_1_rec",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "2. Run Recursive Program (Lab_06_1_rec)"
+        }
+    ]
+}
