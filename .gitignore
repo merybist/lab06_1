@@ -4,3 +4,4 @@ UnitTest_06_1_it
 UnitTest_06_1_rec
 *.o
 .DS_Store
+~$*

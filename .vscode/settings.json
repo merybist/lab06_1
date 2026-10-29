@@ -8,5 +8,19 @@
     "files.associations": {
         "*.cpp": "cpp",
         "*.h": "cpp"
-    }
+    },
+    "testMate.cpp.test.parallelExecutionLimit": 1,
+    "testMate.cpp.test.workingDirectory": "${workspaceFolder}",
+    "testMate.cpp.discovery.gracePeriodForMissing": 10,
+    "testMate.cpp.test.advancedExecutables": [
+        {
+            "pattern": "UnitTest_06_1_it",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "pattern": "UnitTest_06_1_rec",
+            "cwd": "${workspaceFolder}"
+        }
+    ],
+    "testMate.cpp.log.logLevel": "debug"
 }
